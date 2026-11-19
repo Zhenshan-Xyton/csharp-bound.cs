@@ -3,6 +3,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <RuntimeFrameworkVersion>10.0.9</RuntimeFrameworkVersion>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <AssemblySearchPaths>{HintPathFromItem}</AssemblySearchPaths>
     <PinnedRuntimeDirectory>$(NetCoreRoot)shared/Microsoft.NETCore.App/$(RuntimeFrameworkVersion)</PinnedRuntimeDirectory>
     <RuntimeReferenceDirectory>$(PinnedRuntimeDirectory)</RuntimeReferenceDirectory>
     <RuntimeReferenceDirectory Condition="!Exists('$(PinnedRuntimeDirectory)/System.Private.CoreLib.dll')">$(MSBuildThisFileDirectory)runtime-refs</RuntimeReferenceDirectory>
